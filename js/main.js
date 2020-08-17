@@ -10,12 +10,17 @@ $(document).ready(function() {
     const groceryItems = [item1, item2, item3];
     groceryItems.sort();
     // console.log(groceryItems);
+
     const groceryList = document.createElement('ul');
     // console.log(groceryList);
     groceryItems.forEach(function(groceryItem) {
-      const li = document.createElement('li');
-      li.textContent = groceryItems;
+      let li = document.createElement('li');
+      li.textContent = groceryItem;
       list.appendChild(li);
+      const insert = document.querySelector("#insert");
+      insert.appendChild(list);
+      console.log(insert);
     });
+
   });
 });
