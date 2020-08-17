@@ -6,5 +6,9 @@ $(document).ready(function() {
     const item2 = $("#item2").val();
     const item3 = $("#item3").val();
     // console.log(item1, item2, item3);
+
+    const groceryItems = [item1, item2, item3];
+    groceryItems.sort();
+    console.log(groceryItems);
   });
 });
